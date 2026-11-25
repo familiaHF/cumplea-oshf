@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #777;
+}
+
+/* BARRA SUPERIOR */
+
+.barra {
+    background: #294783;
+    color: white;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 3px 6px #aaa;
+}
+
+.barra h1 {
+    font-size: 35px;
+}
+
+.volver {
+    position: absolute;
+    left: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* MENSAJE */
+
+.mensaje {
+    text-align: center;
+    padding: 85px 15px 55px;
+}
+
+.mensaje h2 {
+    color: #1761c9;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.mensaje p {
+    font-size: 23px;
+    margin-bottom: 22px;
+    color: #888;
+}
+
+/* MESES */
+
+.mes-titulo {
+    background: #1260df;
+    color: white;
+    padding: 35px 50px;
+    font-size: 35px;
+    font-weight: bold;
+    border-top: 12px solid #294783;
+}
+
+/* PERSONAS */
+
+.persona {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    min-height: 125px;
+    gap: 25px;
+}
+
+.icono {
+    width: 95px;
+    height: 95px;
+    border: 9px solid #a0a8b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #a0a8b0;
+    font-size: 55px;
+}
+
+.nombre {
+    flex: 1;
+    font-size: 23px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.fecha {
+    text-align: center;
+    min-width: 100px;
+}
+
+.fecha strong {
+    display: block;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.fecha span {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .barra h1 {
+        font-size: 27px;
+    }
+
+    .mensaje h2 {
+        font-size: 23px;
+    }
+
+    .mensaje p {
+        font-size: 17px;
+    }
+
+    .mes-titulo {
+        font-size: 28px;
+        padding: 25px;
+    }
+
+    .persona {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    .icono {
+        width: 65px;
+        height: 65px;
+        font-size: 35px;
+        border-width: 6px;
+    }
+
+    .nombre {
+        font-size: 15px;
+    }
+
+    .fecha {
+        min-width: 65px;
+    }
+
+    .fecha strong {
+        font-size: 38px;
+    }
+
+    .fecha span {
+        font-size: 14px;
+    }
+}
